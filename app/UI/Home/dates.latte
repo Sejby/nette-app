@@ -1,0 +1,11 @@
+{extends '../@layout.latte'}
+
+{block content}
+
+<a n:href="Home:default" class="btn btn-secondary">Zpět</a>
+
+<table class="table">
+  <tr n:foreach="$dates as $date">
+    <td ><p>{$date['createdAt']}</p></td>
+  </tr>
+</table>

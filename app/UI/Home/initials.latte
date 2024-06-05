@@ -1,0 +1,11 @@
+{extends '../@layout.latte'}
+
+{block content}
+
+<a n:href="Home:default" class="btn btn-secondary">Zpět</a>
+
+<table class="table">
+  <tr n:foreach="$initials as $initial">
+    <td ><p>{$initial['name']}</p></td>
+  </tr>
+</table>
