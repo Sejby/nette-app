@@ -33,7 +33,7 @@ final class HomeFacade
     }
 
 
-    // Vybere random joke o Chuckovi, určitě by to šlo vyřešit i lépe a jinak, ale napadlo mne použití rekurze
+    // Vybere random joke o Chuckovi, napadlo mne použití rekurze
     private function getRandomNorrisJoke(): ?string
     {
         $random_number = rand(0, count($this->data)  - 1);
